@@ -1,0 +1,1 @@
+This is an brief introduction for my first OTP project, which is to build a Google homepage!
