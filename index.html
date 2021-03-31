@@ -2,26 +2,78 @@
 <html>
 <head>
 <title>Google Homepage</title>
+<style>
+    .navbar{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .topicons{
+        padding: 5px;
+        color: black;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        padding-top: 100px;
+        padding-bottom: 20px;
+    }
+
+    .searchbar{
+        display:flex;
+        justify-content: center;
+    }
+
+    .searchbar_buttons{
+        display: flex;
+        justify-content: center;
+    }
+    .buttons{
+        padding: 10px;
+        margin: 30px 10px 10px 10px;
+        border-radius: 3px;
+        border: 0;
+        
+    }
+    p{
+        text-align: center;
+    }
+
+
+
+</style>
 </head>
 
 <body>
-<div>
-    <div>Gmail</div>
-    <div>Images</div>
-    <img scr="#" alt="The google apps icon">
-    <img scr="#" alt="Personal gmail profile picture">
+<div class="navbar">
+    <a class="topicons" id="gmail" href="#">Gmail</a>
+    <a class="topicons" id="images" href="#">Images</a>
+    <!--<img scr="#" alt="The google apps icon">
+    <img scr="#" alt="Personal gmail profile picture">-->
 </div>
 <div>
-    <img scr="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google's logo">
+    <div class="logo">
+      <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google's logo">
+    </div>
+    <div class="searchbar">
+      <input type="text" placeholder="">
+    </div>
+    <div class="searchbar_buttons">
+      <button type="button" class="buttons">Google Search</button>
+      <button type="button" class="buttons">I'm feeling lucky</button>
+    </div>
+    <div>
+        <p>Google offered in: <a href="#" class="languages">Mandarin</a> <a href="#" class="languages">Japanese</a></p>
+    </div>
 </div>
-<div>
-    <input type="text" placeholder="">
-</div>
-<div>
-    <input type="button" placeholder="Google Search">
-    <input type="button" placeholder="I'm Feeling Lucky">
-</div>
-<p>Google offered in: <a href="#">Mandarin</a> <a href="#">Japanese</a></p>
 </body>
 <footer>
     <div>Japan</div>
