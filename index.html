@@ -36,6 +36,7 @@
         display: flex;
         justify-content: center;
     }
+
     .buttons{
         padding: 10px;
         margin: 30px 10px 10px 10px;
@@ -43,9 +44,39 @@
         border: 0;
         
     }
+
     p{
         text-align: center;
     }
+
+    .bottom_line{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "left right";
+
+    }
+
+    .left_footer{
+        display: flex;
+        grid-area: left;
+        
+    }
+
+    .left_selections{
+        padding: 10px; 
+    }
+
+    .right_footer{
+        display: flex;
+        justify-content: flex-end;
+        grid-area: right;
+    }
+
+    .right_selections{
+        padding: 10px;
+    }
+
 
 
 
@@ -77,17 +108,19 @@
 </body>
 <footer>
     <div>Japan</div>
-    <div>
-        <div>About</div>
-        <div>Advertising</div>
-        <div>Business</div>
+    <div class="bottom_line">
+    <div class="left_footer">
+        <div class="left_selections">About</div>
+        <div class="left_selections">Advertising</div>
+        <div class="left_selections">Business</div>
+        <div class="left_selections">How Search Works</div>
     </div>
     
-    <div>
-        <div>How Search works</div>
-        <div>Privacy</div>
-        <div>Terms</div>
-        <div>Settings</div>
+    <div class="right_footer">
+        <div class="right_selections">Privacy</div>
+        <div class="right_selections">Terms</div>
+        <div class="right_selections">Settings</div>
+    </div>
     </div>
     
 </footer>
