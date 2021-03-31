@@ -64,10 +64,16 @@
 
     }
 
+    footer{
+        background-color:rgb(236, 236, 236);
+    }
+
     .left_footer{
-        display: flex;
         grid-area: left;
-        
+        display: grid;
+        grid-template-columns: 70px 100px 80px 150px;
+        text-align: center;
+        justify-self: center;
     }
 
     .left_selections{
@@ -75,9 +81,11 @@
     }
 
     .right_footer{
-        display: flex;
-        justify-content: flex-end;
         grid-area: right;
+        display: grid;
+        grid-template-columns: 70px 70px 70px;
+        text-align: center;
+        justify-self: center;
     }
 
     .right_selections{
@@ -120,7 +128,7 @@
         <div class="left_selections">About</div>
         <div class="left_selections">Advertising</div>
         <div class="left_selections">Business</div>
-        <div class="left_selections">How Search Works</div>
+        <div class="left_selections">How Search works</div>
     </div>
     
     <div class="right_footer">
