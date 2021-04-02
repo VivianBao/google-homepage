@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Google Homepage</title>
+<script src="https://kit.fontawesome.com/4bdf7764be.js" crossorigin="anonymous"></script>
 <style>
     .navbar{
         display: flex;
@@ -37,12 +38,24 @@
         justify-content: center;
     }
 
-    input[type="text"]{
-        height: 30px;
-        border-width: 1px;
-        border-color: lightgray;
-        border-radius: 50px;
+    .icon{
+        position: relative;
+        left:30px;
+        top: 11px;
+        color:rgb(196, 196, 196)
+
     }
+
+
+    .input_field{
+        height: 35px;
+        border: 1px solid lightgray;
+        border-radius: 50px;
+        outline: none;
+        padding-left: 40px;
+    }
+
+    
 
     .searchbar_buttons{
         display: flex;
@@ -147,7 +160,8 @@
       <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google's logo">
     </div>
     <div class="searchbar">
-      <input type="text" placeholder="" size="60">
+      <i class="fas fa-search icon"></i>
+      <input type="text" class="input_field" placeholder="" size="60">
     </div>
     <div class="searchbar_buttons">
       <button type="button" class="buttons">Google Search</button>
