@@ -67,22 +67,7 @@
 
     }
 
-    @media (max-width: 650px) {
-        #footer{
-            background-color: black;
-        }
-       
-        
-        .bottom_line{
-            grid-template-columns: 1fr 2fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-template-areas:
-            "country country"
-            "left left"
-            "right right";  
-        }
-
-    }
+    
 
     #footer{
         background-color:rgb(236, 236, 236);
@@ -125,7 +110,23 @@
         color: black;
     }
 
+@media (max-width: 630px) {
+        #footer{
+            height: auto;
+            
+        }
+       
+        
+        .bottom_line{
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas:
+            "country country"
+            "left left"
+            "right right";  
+        }
 
+    }
 
 
 </style>
