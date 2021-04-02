@@ -59,8 +59,28 @@
     .bottom_line{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas:
+        "country country"
+        "left right"
         "left right";
+
+    }
+
+    @media (max-width: 650px) {
+        #footer{
+            background-color: black;
+        }
+       
+        
+        .bottom_line{
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas:
+            "country country"
+            "left left"
+            "right right";  
+        }
 
     }
 
@@ -74,6 +94,7 @@
     }
 
     #country{
+        grid-area: country;
         padding: 15px 0px 15px 10px;
         border-bottom: 1px solid rgb(196, 196, 196);
     }
@@ -134,8 +155,11 @@
 </div>
 </body>
 <footer id="footer">
-    <div id="country">Japan</div>
+    
     <div class="bottom_line">
+
+    <div id="country">Japan</div>
+
     <div class="left_footer">
         <a class="left_selections" href="">About</a>
         <a class="left_selections" href="">Advertising</a>
