@@ -9,10 +9,12 @@
     *{
         font-family: 'Montserrat', sans-serif;
     }
+
     .navbar{
         display: flex;
         justify-content: flex-end;
     }
+
     .topicons{
         padding: 15px 10px 15px 10px;
         color: black;
@@ -88,11 +90,18 @@
     }
 
     .buttons{
-        padding: 10px;
+        padding: 12px;
         margin: 30px 10px 10px 10px;
         border-radius: 3px;
-        border: 0;
+        border: 1px solid transparent;
         background-color: rgb(245, 245, 245);
+        font-size: 14px;
+        color:rgb(66, 66, 66)
+    }
+
+    .buttons:hover{
+        box-shadow:0px 1px rgb(241, 241, 241);
+        border: 1px solid rgb(207, 207, 207);
     }
 
     p{
@@ -118,7 +127,6 @@
         "country country country country country"
         ". left . right ."; 
     }
-
     
     #country{
         grid-area: country;
@@ -203,7 +211,7 @@
     </div>
     <div class="searchbar_buttons">
       <button type="button" class="buttons">Google Search</button>
-      <button type="button" class="buttons">I'm feeling lucky</button>
+      <button type="button" class="buttons">I'm Feeling Lucky</button>
     </div>
     <div>
         <p>Google offered in: <a href="#" class="languages">中文（繁體）</a> <a href="#" class="languages">日本語</a></p>
