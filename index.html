@@ -3,7 +3,12 @@
 <head>
 <title>Google Homepage</title>
 <script src="https://kit.fontawesome.com/4bdf7764be.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 <style>
+    *{
+        font-family: 'Montserrat', sans-serif;
+    }
     .navbar{
         display: flex;
         justify-content: flex-end;
@@ -18,7 +23,7 @@
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        padding: 8px 10px 8px 10px;
+        padding: 4px 8px 4px 8px;
     }
 
     #software_menu{
@@ -26,7 +31,6 @@
         padding: 15px 10px 15px 10px;
         color:rgb(107, 107, 107);
     }
-
 
     a:link {
         text-decoration: none;
@@ -59,6 +63,14 @@
         color:rgb(196, 196, 196)
     }
 
+    .mic_icon{
+        width: 22px;
+        height: 22px;
+        position: relative;
+        top: 12px;
+        right: 30px;
+    }
+
     .input_field{
         height: 40px;
         width: 450px;
@@ -69,8 +81,6 @@
         padding-right: 45px;
         
     }
-
-    
 
     .searchbar_buttons{
         display: flex;
@@ -87,7 +97,7 @@
 
     p{
         text-align: center;
-        font-size: 15px; 
+        font-size: 13px; 
     }
 
     #footer{
@@ -122,7 +132,7 @@
         justify-self: center;
         align-self: center;
         display: grid;
-        grid-template-columns: 70px 100px 80px 150px;
+        grid-template-columns: 70px 100px 80px 160px;
         text-align: center;
         
     }
@@ -178,7 +188,9 @@
     <a class="topicons" id="gmail" href="#">Gmail</a>
     <a class="topicons" id="images" href="#">Images</a>
     <i class="fas fa-th" id="software_menu"></i>
-    <img class="profile_pic" src="IMG_2184.JPG" alt="Personal gmail profile picture">
+    <a class="profile_pic" href="https://github.com/VivianBao">
+      <img class="profile_pic" src="IMG_2184.JPG" alt="Personal gmail profile picture">
+    </a>
 </div>
 <div>
     <div class="logo">
@@ -187,6 +199,7 @@
     <div class="searchbar">
       <i class="fas fa-search icon"></i>
       <input type="text" class="input_field" placeholder="" size="60">
+      <img class="mic_icon" src="google-mic-seeklogo.com.svg" alt="mic icon">
     </div>
     <div class="searchbar_buttons">
       <button type="button" class="buttons">Google Search</button>
